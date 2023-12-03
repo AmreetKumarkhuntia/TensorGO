@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+}
+
+.Title {
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: 0.5rem;
+    text-align: center;
+    text-transform: uppercase;
+
+    padding: 4%;
+}
+
+.Title-2 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+}
+
+.SubTitle {
+    font-size: .9rem;
+    font-weight: 300;
+    color: #676767;
+
+    padding: 4% 0%;
+}
+
+.Navbar {
+    display: flex;
+    background-color: white;
+    height: 10vh;
+    width: 100%;
+
+    position: fixed;
+    top: 0;
+    z-index: 1;
+
+    justify-content: space-around;
+    box-shadow: 0px 0px 100px rgba(69, 69, 69, 0.472);
+
+    .Links {
+        display: flex;
+        width: 30%;
+
+        justify-content: space-around;
+        align-items: center;
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        &.Buttons {
+            width: 15%;
+
+            div {
+                background-color: #FFBC45;
+                padding: 5% 10%;
+                border-radius: 5px;
+                color: white;
+            }
+
+            .profile {
+                background-color: white;
+
+                svg {
+                    width: auto;
+                    height: 2.5rem;
+                }
+            }
+        }
+
+        &.Logo {
+            width: 10%;
+        }
+    }
+}
+
+.Home {
+    margin-top: 10vh;
+    height: 90vh;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .Logo {
+        width: 50%;
+
+    }
+}
+
+.FormContainer {
+    display: flex;
+    margin-top: 10vh;
+    padding: 8vh;
+    min-height: 74vh;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .form {
+        min-width: 30%;
+        padding: 3%;
+
+        background-color: #e5e5e52f;
+        border: 2px solid #FFBC45;
+        border-radius: 15px;
+
+        box-shadow: 30px 30px 100px rgba(107, 107, 107, 0.397);
+    }
+
+    .container {
+        .input {
+            width: 100%;
+        }
+
+        button {
+            margin-top: 4%;
+            background-color: #FFBC45;
+        }
+
+        .textarea {
+            height: 5rem;
+        }
+    }
+}
+
+.Profile{
+    margin-top: 10vh;
+    height: 90vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .container{
+        min-height: 60%;
+        width: 70%;
+        padding: 5% 5%;
+
+        background-color: #8787870d;
+        border-radius: 15px;
+        box-shadow: 10px 10px 25px rgba(172, 172, 172, 0.586);
+    }
+}
