@@ -90,6 +90,22 @@ body {
     justify-content: space-around;
     align-items: center;
 
+    .Title {
+        padding-left: 0;
+        text-align: left;
+    }
+
+    .Title-2 {
+        margin-bottom: 2rem;
+    }
+
+    button {
+        background-color: #FFBC45;
+    }
+
+    a{
+        text-decoration: none;
+    }
     .Logo {
         width: 50%;
 
@@ -150,6 +166,11 @@ body {
         border-radius: 15px;
         box-shadow: 10px 10px 25px rgba(80, 80, 80, 0.125);
         border: 2px solid #FFBC45;
+
+        button {
+            margin: 2% 0%;
+            background-color: #FFBC45;
+        }
 
         .content {
             .comment {

@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 import { updateUser } from "../store/features/userSlice";
 import { CommentType } from "../Types";
+import { Button } from "@mui/material";
 
 const Profile = () => {
     const LoggedIn: Boolean = useSelector((s: any) => s.user.login);
@@ -54,6 +55,10 @@ const Profile = () => {
         )
     }
 
+    const HandleLogout = () => {
+
+    }
+
     return (
         <div className="Profile">
             <div className="container">
@@ -61,6 +66,7 @@ const Profile = () => {
                 <div className="SubTitle">
                     <span className="bold">NAME :</span> {user.name}<br />
                     <span className="bold">EMAIL :</span> {user.email}<br />
+                    <Button variant="contained" onClick={HandleLogout}>Log Out</Button>
                 </div>
                 <div className="Title-2">FEEDBACKS</div>
                 <div className="content">
