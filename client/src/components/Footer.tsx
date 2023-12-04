@@ -1,7 +1,7 @@
 const Footer = ()=>{
     return(
         <div className="Footer">
-            Footer
+            Developed By AMREET KUMAR KHUNTIA
         </div>
     )
 }

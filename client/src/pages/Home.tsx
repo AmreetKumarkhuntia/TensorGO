@@ -21,7 +21,7 @@ const Home = () => {
                     <Button variant="contained"><Link to="/Login">LogIn </Link></Button>
                     <Button variant="contained"><Link to="/SignUp">SignUp</Link></Button>
                 </div> : ""}
-                {LoggedIn ? <Button variant="contained">Submit Feedbacks</Button> : ""}
+                {LoggedIn ? <Button variant="contained"><Link to="/Feedback">Submit Feedbacks</Link></Button> : ""}
             </div>
             <img className="Logo" src={HomeLogo} alt="error"></img>
         </div>

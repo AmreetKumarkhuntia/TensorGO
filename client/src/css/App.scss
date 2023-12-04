@@ -101,11 +101,16 @@ body {
 
     button {
         background-color: #FFBC45;
+        color: white !important;
+        margin-right: 1rem;
+        margin-top: 1rem;
     }
 
-    a{
+    a {
         text-decoration: none;
+        color: white !important;
     }
+
     .Logo {
         width: 50%;
 
@@ -187,4 +192,13 @@ body {
             }
         }
     }
+}
+
+.Footer {
+    background-color: #FFBC45;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
 }
