@@ -13,12 +13,14 @@ dotenv.config();
 
 const app: express.Express = express();
 
+const frontendURL = process.env.FRONTENDURL || "";
 const Port: number = Number(process.env.PORT) || 5001;
 const DatabaseURL: string = process.env.DATABASEURL || "";
 const CorsOptions: CorsType = {
-    origin: "*",
+    origin: frontendURL,
     Credentials: true,
 }
+
 
 app.use(cors(CorsOptions));
 app.use(express.urlencoded({ extended: true }));
