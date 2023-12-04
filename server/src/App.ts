@@ -6,6 +6,7 @@ import bodyParser from "body-parser";
 
 import login from "./Routes/login";
 import signup from "./Routes/signup";
+import feedback from "./Routes/feedback";
 import { CorsType } from "./Types";
 
 dotenv.config();
@@ -24,7 +25,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use('/login', login);
 app.use('/signup', signup);
-
+app.use('/feedback', feedback);
 
 async function ConnectDB() {
     try {

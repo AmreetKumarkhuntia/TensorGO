@@ -17,9 +17,9 @@ login.post('/', async (req, res) => {
             comments: [],
             cookie: ""
         }
-        
+
         const result = await User.find({ email: CurrUser.email });
-        
+
         if (result.length === 0) throw {
             status: "fail",
             error: "user doesn't exists"
@@ -33,7 +33,6 @@ login.post('/', async (req, res) => {
         CurrUser.comments = result[0].comments;
         CurrUser.name = result[0].name ? result[0].name : "";
 
-        console.log(CurrUser)
         res.status(200).json({
             email: CurrUser.email,
             name: CurrUser.name,

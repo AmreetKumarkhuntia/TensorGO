@@ -47,13 +47,15 @@ const Login = () => {
             return res.json()
         }).then(
             (res) => {
-                if(res.status!=="error"||res.status!=="failure")
-                update({
-                    email: res?.email,
-                    name: res?.name,
-                    login: true,
-                    comments: res?.comments
-                })
+                if (res)
+                    if (res.status !== "error" && res.status !== "failure") {
+                        update({
+                            email: res?.email,
+                            name: res?.name,
+                            login: true,
+                            comments: res?.comments
+                        })
+                    }
             }
         ).catch((e) => {
             console.log(e);

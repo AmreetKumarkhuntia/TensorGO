@@ -27,6 +27,10 @@ body {
     padding: 4% 0%;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 .Navbar {
     display: flex;
     background-color: white;
@@ -129,21 +133,37 @@ body {
     }
 }
 
-.Profile{
-    margin-top: 10vh;
-    height: 90vh;
+.Profile {
+    margin-top: 20vh;
+    min-height: 80vh;
 
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    .container{
+
+    .container {
         min-height: 60%;
         width: 70%;
         padding: 5% 5%;
 
         background-color: #8787870d;
         border-radius: 15px;
-        box-shadow: 10px 10px 25px rgba(172, 172, 172, 0.586);
+        box-shadow: 10px 10px 25px rgba(80, 80, 80, 0.125);
+        border: 2px solid #FFBC45;
+
+        .content {
+            .comment {
+                padding: 2% 2% !important;
+                margin: 2% 0% !important;
+                background-color: rgb(172 172 172 / 11%);
+                border-radius: 10px;
+                border: 2px solid rgba(178, 178, 178, 0.157);
+
+
+                div {
+                    margin: 1% 0%;
+                }
+            }
+        }
     }
 }

@@ -12,9 +12,14 @@ const userSchema = new mongoose.Schema({
     cookie: String,
 });
 
-
-
+const commentSchema = new mongoose.Schema({
+    email: String,
+    category: String,
+    rating: String,
+    comment: String,
+})
 
 const User = mongoose.model("user", userSchema);
+const Comments = mongoose.model("comment", commentSchema);
 
-export { User };
+export { User,Comments };
